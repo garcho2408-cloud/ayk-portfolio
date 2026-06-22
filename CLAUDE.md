@@ -98,7 +98,19 @@ ayk-portfolio/
 ---
 
 ## Деплой
-Сайт пока не задеплоен. Когда будет готово — задеплоить на GitHub Pages или Cloudflare Pages.
+
+- **Продакшн:** https://ayk-portfolio.pages.dev
+- **GitHub:** https://github.com/garcho2408-cloud/ayk-portfolio
+- Cloudflare Pages автоматически деплоит при каждом пуше в `main`
+
+Для обновления сайта:
+```powershell
+$git = "C:\Users\user\AppData\Local\GitHubDesktop\app-3.5.12\resources\app\git\cmd\git.exe"
+cd "d:\claude\ayk-portfolio"
+& $git add .
+& $git commit -m "описание изменений"
+& $git push origin main
+```
 
 ---
 
