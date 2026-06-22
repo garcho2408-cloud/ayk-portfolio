@@ -1,0 +1,11 @@
+﻿{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ayk-portfolio",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-p", "3456", "d:\\claude\\ayk-portfolio"],
+      "port": 3456
+    }
+  ]
+}

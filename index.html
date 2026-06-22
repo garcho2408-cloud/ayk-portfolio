@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayk Chobanyan — Web Developer</title>
+  <meta name="description" content="Делаю сайты для малого бизнеса — быстро, красиво, без лишнего.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="cursor-glow"></div>
+
+  <div class="layout">
+
+    <!-- LEFT: фиксированная колонка -->
+    <aside class="sidebar">
+      <div class="sidebar__inner">
+
+        <div class="sidebar__top">
+          <a href="#about"><h1 class="sidebar__name">Ayk Chobanyan</h1></a>
+          <p class="sidebar__role">Веб-разработчик</p>
+          <p class="sidebar__desc">Делаю красивые и быстрые сайты для малого бизнеса — под ключ.</p>
+        </div>
+
+        <nav class="sidebar__nav">
+          <a href="#about" class="nav-item active" data-section="about">
+            <span class="nav-item__line"></span>
+            <span class="nav-item__label">Обо мне</span>
+          </a>
+          <a href="#work" class="nav-item" data-section="work">
+            <span class="nav-item__line"></span>
+            <span class="nav-item__label">Работы</span>
+          </a>
+          <a href="#services" class="nav-item" data-section="services">
+            <span class="nav-item__line"></span>
+            <span class="nav-item__label">Услуги</span>
+          </a>
+          <a href="#contact" class="nav-item" data-section="contact">
+            <span class="nav-item__line"></span>
+            <span class="nav-item__label">Контакты</span>
+          </a>
+        </nav>
+
+        <div class="sidebar__socials">
+          <a href="https://t.me/+79661725056" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </a>
+          <a href="https://github.com/garcho2408-cloud" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="mailto:chobanyanayk@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- RIGHT: прокручиваемый контент -->
+    <main class="content">
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <h2 class="section__heading">Обо мне</h2>
+        <div class="about__body">
+          <p>Меня зовут Айк. Я занимаюсь разработкой сайтов для малого бизнеса — салонов красоты, студий, мастеров, локальных брендов. Каждый проект делаю с нуля: от дизайна до деплоя на хостинг с подключением домена.</p>
+          <p>Работаю на чистом HTML, CSS и JavaScript — без тяжёлых фреймворков. Это означает быструю загрузку, простую поддержку и никакой лишней сложности.</p>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Адаптивная вёрстка</span>
+            <span class="tag">Cloudflare Pages</span>
+            <span class="tag">Netlify</span>
+            <span class="tag">Git / GitHub</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section class="section" id="work">
+        <h2 class="section__heading">Работы</h2>
+
+        <a href="https://fednails.ru" target="_blank" rel="noopener" class="project-card">
+          <div class="project-card__preview">
+            <div class="project-card__img-placeholder">fednails.ru</div>
+          </div>
+          <div class="project-card__info">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Студия маникюра Дарьи Федотовой</h3>
+              <svg class="project-card__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <p class="project-card__desc">Сайт-визитка для студии маникюра в Раменском. 6 страниц, галерея работ с lightbox, онлайн-запись через Яндекс, карта, Telegram FAB. Деплой на Cloudflare Pages.</p>
+            <div class="project-card__tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Cloudflare Pages</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="project-card project-card--soon">
+          <div class="project-card__preview">
+            <div class="project-card__img-placeholder project-card__img-placeholder--dim">Скоро</div>
+          </div>
+          <div class="project-card__info">
+            <h3 class="project-card__title">Новый проект в работе</h3>
+            <p class="project-card__desc">Раздел пополняется. Хотите стать следующим клиентом? Напишите мне — обсудим ваш проект.</p>
+            <a href="#contact" class="btn btn--ghost btn--sm" onclick="event.stopPropagation()">Обсудить →</a>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <h2 class="section__heading">Услуги</h2>
+
+        <div class="service-card">
+          <div class="service-card__num">01</div>
+          <div>
+            <h3 class="service-card__title">Сайт-визитка</h3>
+            <p class="service-card__desc">1–6 страниц для локального бизнеса. Дизайн, вёрстка, деплой, домен — всё под ключ. Мобильная адаптация обязательна.</p>
+            <p class="service-card__price">от 15 000 ₽</p>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__num">02</div>
+          <div>
+            <h3 class="service-card__title">Лендинг</h3>
+            <p class="service-card__desc">Одностраничный сайт для продукта, услуги или акции. Быстрый, убедительный, с чётким призывом к действию.</p>
+            <p class="service-card__price">от 10 000 ₽</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <h2 class="section__heading">Контакты</h2>
+        <p class="contact__text">Напишите мне — расскажите о своём бизнесе и что нужно сделать.</p>
+        <div class="contact__links">
+          <a href="https://t.me/+79015410180" target="_blank" rel="noopener" class="btn btn--primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            Написать в Telegram
+          </a>
+          <a href="mailto:chobanyanayk@gmail.com" class="btn btn--ghost">
+            chobanyanayk@gmail.com
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© 2026 Ayk Chobanyan</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- MOBILE NAV -->
+  <header class="mobile-header">
+    <span class="sidebar__name sidebar__name--sm">Ayk Chobanyan</span>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">Обо мне</a>
+    <a href="#work" class="mobile-link">Работы</a>
+    <a href="#services" class="mobile-link">Услуги</a>
+    <a href="#contact" class="mobile-link">Контакты</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
