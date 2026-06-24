@@ -365,6 +365,83 @@ ul { list-style: none; }
   color: var(--cyan);
 }
 
+/* ===== PROCESS ===== */
+.process-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.process-step {
+  display: flex;
+  gap: 24px;
+  padding: 24px 20px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.process-step:hover {
+  background: rgba(255,255,255,0.03);
+  border-color: var(--border);
+}
+
+.process-step__num {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cyan);
+  flex-shrink: 0;
+  width: 28px;
+  padding-top: 2px;
+}
+
+.process-step__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.process-step__desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ===== REVIEWS ===== */
+.review-card {
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.02);
+  margin-bottom: 16px;
+}
+
+.review-card__text {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.75;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.review-card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.review-card__name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.review-card__role {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
 /* ===== CONTACT ===== */
 .contact__text {
   font-size: 22px;
